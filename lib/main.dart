@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Quiz App',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Quiz App'),
+          title: const Text('Quiz App'),
         ),
-        body: Center(
+        body: const Center(
           child: Text('Hello World'),
         ),
       ),
@@ -18,5 +20,5 @@ class MyApp extends StatelessWidget {
 }
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
