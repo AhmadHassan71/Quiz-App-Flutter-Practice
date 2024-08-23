@@ -9,7 +9,7 @@ class QuizLogo extends StatelessWidget {
     return Image.asset(
       quizLogo,
       fit: BoxFit.cover,
-      width: 300,
+      width: 275,
     );
   }
 }
