@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 // Strings
 const flutterLearningIntro = "Learn Flutter the fun way!";
-const startButtonLabel = 'Start Quiz';
+const startButtonLabel = 'Start Quiz Now!';
 
 // Images
 const quizLogo = 'assets/images/quiz-logo.png';
