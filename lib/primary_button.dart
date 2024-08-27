@@ -8,7 +8,7 @@ class PrimaryButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
+    return ElevatedButton.icon(
       onPressed: () {},
       style: ElevatedButton.styleFrom(
         padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0),
@@ -17,7 +17,7 @@ class PrimaryButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(2.0),
         ),
       ),
-      child: Text(
+      label: Text(
         text,
         style: const TextStyle(
           fontSize: textExtraSmall,
@@ -25,6 +25,7 @@ class PrimaryButton extends StatelessWidget {
           fontFamily: fontFamily,
         ),
       ),
+      icon: const Icon(Icons.arrow_right_alt_rounded),
     );
   }
 }
