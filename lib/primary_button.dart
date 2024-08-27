@@ -2,14 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:quiz_app/styles.dart';
 
 class PrimaryButton extends StatelessWidget {
-  const PrimaryButton(this.text, {super.key});
+  const PrimaryButton({
+    required this.text,
+    required this.onPressed,
+    super.key,
+  });
 
   final String text;
+  final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton.icon(
-      onPressed: () {},
+    return OutlinedButton.icon(
+      onPressed: onPressed,
       style: ElevatedButton.styleFrom(
         padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0),
         backgroundColor: btnColor,

@@ -6,19 +6,28 @@ import 'package:quiz_app/styles.dart';
 class QuizHome extends StatelessWidget {
   const QuizHome({super.key});
 
+  void onPressed() {
+    print('Button pressed to Start Quiz');
+  }
+
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        QuizLogo(),
-        SizedBox(height: 60),
-        Text(
+        const QuizLogo(),
+        const SizedBox(height: 60),
+        const Text(
           flutterLearningIntro,
           style: primaryTextStyle,
         ),
-        SizedBox(height: 20),
-        PrimaryButton(startButtonLabel),
+        const SizedBox(height: 20),
+        PrimaryButton(
+          text: startButtonLabel,
+          onPressed: () {
+            onPressed();
+          },
+        ),
       ],
     );
   }
