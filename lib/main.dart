@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// import 'package:quiz_app/questions_screen.dart';
 import 'package:quiz_app/quiz_home.dart';
 import 'package:quiz_app/styles.dart';
 
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: backgroundColor,
         body: Center(
           child: QuizHome(),
+          // child: QuizScreen(),
         ),
       ),
     );
