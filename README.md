@@ -8,6 +8,7 @@ This repository contains the code for a Quiz App built using Flutter. It is a pr
 - Score tracking
 - Timer for each question
 - Results screen with detailed feedback
+- Material UI
 
 ## Getting Started
 
