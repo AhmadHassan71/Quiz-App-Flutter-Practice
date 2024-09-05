@@ -4,10 +4,12 @@ import 'package:quiz_app/primary_button.dart';
 import 'package:quiz_app/styles.dart';
 
 class QuizHome extends StatelessWidget {
-  const QuizHome({super.key});
+  const QuizHome(this.startQuiz, {super.key});
+  final void Function() startQuiz;
 
   void onPressed() {
     print('Button pressed to Start Quiz');
+    startQuiz();
   }
 
   @override
@@ -25,7 +27,7 @@ class QuizHome extends StatelessWidget {
         PrimaryButton(
           text: startButtonLabel,
           onPressed: () {
-            onPressed();
+            startQuiz();
           },
         ),
       ],
